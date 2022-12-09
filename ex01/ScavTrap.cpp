@@ -6,7 +6,7 @@ ScavTrap::ScavTrap(void) : ClapTrap("Scappy")
 	_HP = 100;
 	_EP = 50;
 	_AD = 20;
-	println("But I'm a ScavTrap!");
+	printname(_name, ": But I'm a ScavTrap!");
 }
 
 ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
@@ -14,18 +14,18 @@ ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
 	_HP = 100;
 	_EP = 50;
 	_AD = 20;
-	println("But I'm the ScavTrap!");
+	printname(_name, ": But I'm the ScavTrap!");
 }
 
 ScavTrap::ScavTrap(const ScavTrap &scavTrap) : ClapTrap(scavTrap)
 {
 	*this = scavTrap;
-	println("But I'm THE ScavTrap!");
+	printname(_name, ": But I'm THE ScavTrap!");
 }
 
 ScavTrap::~ScavTrap(void)
 {
-	printname(_name,  " (tears...)");
+	printname(_name,  ": (tears...)");
 }
 
 
@@ -51,7 +51,7 @@ void	ScavTrap::attack(const std::string &target)
 {
 	if (_EP > 0 && _HP > 0)
 	{
-		std::cout << _name << ": 'I'll damage you " << target << "!' (-" << _AD << "HP)" << std::endl;
+		std::cout << _name << ": 'I'll damage you, " << target << "!' (-" << _AD << "HP)" << std::endl;
 		_EP -= 1;
 	}
 	else if (_EP > 0)
