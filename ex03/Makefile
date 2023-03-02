@@ -1,5 +1,5 @@
 
-NAME := cpp2.out
+NAME := cpp03.out
 
 SRC := $(wildcard *.cpp)
 HEADS := $(wildcard *.hpp)
