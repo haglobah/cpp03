@@ -4,7 +4,7 @@ NAME := cpp2.out
 SRC := $(wildcard *.cpp)
 HEADS := $(wildcard *.hpp)
 
-CPPFLAGS := -std=c++98 -Wall -Wextra -Werror
+CPPFLAGS := -std=c++98 -Wall -Wextra -Werror -Wshadow
 
 all : $(NAME)
 

@@ -5,7 +5,7 @@
 DiamondTrap::DiamondTrap(void) : 
 	ClapTrap(), ScavTrap(), FragTrap()
 {
-	printname(_name, ": a Diamond exists!");
+	printname(_name, ": a diamond exists!");
 }
 
 DiamondTrap::DiamondTrap(const DiamondTrap &diamondTrap) :
@@ -22,7 +22,7 @@ DiamondTrap::DiamondTrap(std::string name) :
 	_HP = FragTrap::_HP;
 	_EP = ScavTrap::_EP;
 	_AD = FragTrap::_AD;
-	printname(_name, ": a Diamond exists!");
+	printname(_name, ": a DiamondTrap exists!");
 }
 
 DiamondTrap::~DiamondTrap(void)
