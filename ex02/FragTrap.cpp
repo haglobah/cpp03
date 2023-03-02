@@ -57,5 +57,5 @@ void	FragTrap::attack(const std::string &target)
 	else if (_EP > 0)
 		printname(_name, " can't deal damage. He*she's dead.");
 	else
-		printname(_name, " deal damage. He*she's got no energy left.");
+		printname(_name, " can't deal damage. He*she's got no energy left.");
 }
